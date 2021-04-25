@@ -1,0 +1,33 @@
+body
+{
+	background-color: #005EA4;
+	color: white;
+}
+
+.title
+{
+	font-size: 75px;
+	text-align: center;
+}
+
+.headspace
+{
+	padding-top: 5%;
+}
+
+footer
+{
+	background-color: #343A40;
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+
+.card-text
+{
+	color: black;
+}
+
+.test
+{
+	align-self: left;
+}
