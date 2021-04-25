@@ -1,0 +1,63 @@
+
+backgrounds:
+  room: assets/backgrounds/room_day.jpg
+  room_night: assets/backgrounds/room_night.jpg
+  room_night_light: assets/backgrounds/room_night_light.jpg
+  architects: assets/backgrounds/architects.jpg
+  construction: assets/backgrounds/construction.jpg
+  forum: assets/backgrounds/forum.jpg
+  game: assets/backgrounds/game.jpg
+  key: assets/backgrounds/key.jpg
+  supermarket: assets/backgrounds/supermarket.jpg
+
+characters:
+  deuzi:
+    displayName: Deuzilene
+    speechColour: "#ca90cf"
+    looks:
+      normal: assets/characters/Char3NormalSchool.png
+      happy: assets/characters/Char3HappySchool.png
+      angry: assets/characters/Char3AngrySchool.png
+  client:
+    displayName: Client
+    speechColour: "#ffffff"
+    looks:
+      normal: assets/characters/rich_person.png
+  deaf_friend:
+    displayName: John
+    speechColour: "#ffffff"
+    looks:
+      normal: assets/characters/deaf_friend.png
+  construct_person:
+    displayName: Construction
+    speechColour: "#ffffff"
+    looks:
+      normal: assets/characters/construction_person.png
+
+cgs:
+  phone1: assets/objects/phone1.png
+  phone2: assets/objects/phone2.png
+  bar_graph: assets/objects/bar_graph.png
+  chart: assets/objects/chart.png
+  controller: assets/objects/controller.png
+  money_bag: assets/objects/money_bag.png
+  access_icon: assets/objects/icon.png
+  guideline: assets/objects/guideline.jpg
+  minecraft: assets/objects/minecraft.png
+  blueprint: assets/objects/blueprint.png
+
+music:
+  rollingCredits: assets/audio/Evan_Schaeffer_-_01_-_Aqueduct.mp3
+  morningBGM: assets/audio/Evan_Schaeffer_-_03_-_Glow.mp3
+sfx:
+  ringtoneSFX: assets/audio/nokia6210-24-elise.mp3
+  ringtoneSFX2: assets/audio/alcatel-top_secret.mp3
+
+extra:
+  image:
+    title: assets/backgrounds/title.png
+  spritesheets:
+    rain: assets/ambient/rain.png 17 17
+    sakura: assets/ambient/sakura-petals.png 17 26
+    snowflakes: assets/ambient/snowflakes.png 17 17
+    snowflakes_large: assets/ambient/snowflakes_large.png 64 64

@@ -1,0 +1,119 @@
+start:
+  - show key: WITH FADE CONTINUE
+  - text: Welcome to the Accessibility Game!
+  - text: The goal of this game is to bring awareness and teach you what accessibility is.
+  - text: This game will only scratch the surface of accessibility but should be a good start on your journey to learning more about it.
+  - effect SHOWTITLE: 
+    title: Accessibility
+    subtitle: The Basics 
+  - text: Here is some information about accessibility that you probably didn't know!
+  - show access_icon:
+  - text: Accessibility is the degree to which a product, device, service, or environment is available to as many people as possible.
+  - text: Accessibility can be viewed as the "ability to access" and benefit from some system or entity. 
+  - hide access_icon:
+  - show bar_graph: 
+  - text: According to My Blind Spot
+  - text: In the United States, over 58 million people or nearly 20% of the population above the age of 5 identify themselves as having disabilities.
+  - text: There are 25 million people in the United States with a severe visual impairment.
+  - text: 19 million of them are of working age, where the unemployment rate is nearly 70% of that number.
+  - text: Quiz time!
+  - text: What can accessibility can be viewed as?  
+  - choice:
+    - "the ability to access":
+      - text: That's correct!
+    - "the ability to accessorize":
+      - text: That's not right.
+      - text: Accessibility can be viewed as the "ability to access".
+  - text: Let's move into our first scenario.
+  - hide ALL:
+  - scene: mobile_scene
+
+mobile_scene:
+  - effect SHOWTITLE: 
+    title: Mobility
+    subtitle: The ADA and wheelchairs
+  - show supermarket:
+  - text: When constructing buildings for public use, there are federal guidelines on how passages should be created for all people.
+  - text: Whether it's for people who walk or people who have limited mobility in thier legs.
+  - text: Let's take a look at a scenario in which we deal with mobility.
+  - hide ALL:
+  - effect SHOWTITLE: 
+    title: Construction Scenario
+    subtitle: To build or not to build
+  - show construction:
+  - text: In this scenario we'll be dealing with the issue of mobility.
+  - show client: AT 133,300
+  - show blueprint:
+  - show construct_person: AT 666,300
+  - text: A construction company is currently looking over the floor plans of a building that a client has requested.
+  - text: Initially everything seems fine but upon closer inspection, there seems to be an issue.
+  - hide client:
+  - hide blueprint:
+  - hide construct_person:
+  - show guideline:
+  - text: According to ADA(Americans with Disabilities Act) 
+  - text: When creating a passage the minimum clear width for single wheelchair passage shall be 32 inches at a point and 36 inches continuously.
+  - text: Due to the limited space of the property, the client is trying to maximize the amount of real estate with a focus on aesthetics.
+  - text: On one side of the building, there isn't enough space to make the passage 36 inches continuously but only 32 inches.
+  - show construct_person: AT 666,300
+  - text: What should the construction company do?
+  - choice:
+    - "Build it as is, no one will notice":
+      - hide guideline:
+      - hide construct_person:
+      - text: No, you shouldn't build it as is!
+      - show money_bag:
+      - text: If the construction company risks it and someone finds out, they or the client can be fined from $55,000 to $75,000.
+      - text: And if they repeat this in the future, they can be fined up to $150,000!
+    - "Don't build it, modify the blueprint with the client":
+      - hide guideline:
+      - hide construct_person:
+      - show architects:
+      - text: That's right! Speaking with the client and finding a solution that satisfies the guidelines is the best approach. 
+      - show money_bag:
+      - text: If the construction company risks it and someone finds out, they or the client can be fined from $55,000 to $75,000.
+      - text: And if they repeat this in the future, they can be fined up to $150,000!
+  - text: Let's move into our last scenario.
+  - hide ALL:
+  - scene: tech_scene
+
+tech_scene:
+  - effect SHOWTITLE: 
+    title: Game Scenario
+    subtitle: Digital Accessibility
+  - show game:
+  - show deaf_friend: AT 666,300
+  - show controller:
+  - text: You recently introduced your friend John to a brand new first person game. Your friend John is deaf.
+  - text: You communicate with him using the in game text chat but sometimes enemies sneak up on him and he dies quite a few times because he can't hear the sound of the enemies.
+  - hide deaf_friend:
+  - hide controller:
+  - show forum:
+  - text: You find out that there is a forum for the game and that you can provide feedback and suggestions on what the next update can have.
+  - text: You have this cool idea where surrounding noises will be displayed in text relative to the player. 
+  - text: You believe this would help deaf people know their surroundings better, like you friend John.
+  - text: You're now wondering whether or not to suggest the feature because there are so many posts about different topics.
+  - choice:
+    - "Suggest the feature, it wouldn't hurt!":
+      - text: That's right!
+      - text: When people don't speak out on an issue because they think they won't be noticed amongst the many other questions, they become a silent majority.
+      - text: By making that post, you have the potential to start a discussion amongst other members who agree with you.
+      - text: This can lead into developers noticing an issue that they'll be more that happy to resolve.
+      - show minecraft:
+      - text: For example, in the game of MineCraft where there are about 126 million active players, there are accessibility features built in. 
+      - text: There is a feature where you can turn on text for surroundings sounds and it'll be display it in the bottom corner of your screen.
+    - "There are so many post, I don't think mine will be noticed":
+      - text: No, that's not the mentality you should have.
+      - text: When people don't speak out on an issue because they think they won't be noticed amongst the many other questions, they become a silent majority.
+      - text: You should make that post! By making that post, you have the potential to start a discussion amongst other members who agree with you.
+      - text: This can lead into developers noticing an issue that they'll be more that happy to resolve.
+      - show minecraft:
+      - text: For example, in the game of MineCraft where there are about 126 million active players, there are accessibility features built in. 
+      - text: There is a feature where you can turn on text for surroundings sounds and it'll be display it in the bottom corner of your screen.
+  - scene: endGame
+endGame:
+  - hide ALL:
+  - effect ROLLINGCREDITS:
+    endGame: true
+    text:
+      - Thanks for playing!
